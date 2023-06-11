@@ -6032,7 +6032,6 @@ rules:
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
   - RULE-SET,google,DIRECT
-  - RULE-SET,proxy,PROXY,DIRECT
   - RULE-SET,direct,DIRECT
   - RULE-SET,lancidr,DIRECT
   - RULE-SET,cncidr,DIRECT
@@ -6046,8 +6045,6 @@ rules:
   # Rule
   - RULE-SET,Advertising,REJECT
   - RULE-SET,Advertising_Domain,REJECT
-  - RULE-SET,Proxy,PROXY, DIRECT,🚀 手动切换
-  - RULE-SET,Proxy_Domain,PROXY,DIRECT,🚀 手动切换
   - RULE-SET,SteamCN,🇨🇳 中国节点
   - RULE-SET,China,🇨🇳 中国节点
   - RULE-SET,China_Domain,🇨🇳 中国节点
