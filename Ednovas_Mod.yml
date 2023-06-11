@@ -5894,20 +5894,6 @@ rule-providers:
     interval: 86400
     path: Advertising_Domain.yaml
 
-  Proxy:
-    behavior: classical
-    type: http
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Proxy/Proxy.yaml
-    interval: 86400
-    path: Proxy.yaml
-
-  Proxy_Domain:
-    behavior: domain
-    type: http
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Proxy/Proxy_Domain.yaml
-    interval: 86400
-    path: Proxy_Domain.yaml
-
   SteamCN:
     behavior: classical
     type: http
@@ -5956,13 +5942,6 @@ rule-providers:
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
     path: ./ruleset/google.yaml
-    interval: 86400
-
-  proxy:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-    path: ./ruleset/proxy.yaml
     interval: 86400
 
   direct:
