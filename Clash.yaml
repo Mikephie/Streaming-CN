@@ -127,6 +127,7 @@ parsers: # array
         - name: 🌏 国外网站
           type: select
           proxies:
+            - DIRECT
             - 🚀 手动切换
             - 🇭🇰 香港节点
             - 🇺🇲 美国节点
@@ -137,6 +138,7 @@ parsers: # array
         - name: 📹 国际媒体
           type: select
           proxies:
+            - DIRECT
             - 🚀 手动切换
             - 🇭🇰 香港节点
             - 🇺🇲 美国节点
@@ -157,6 +159,7 @@ parsers: # array
         - name: 🧩 微软服务
           type: select
           proxies:
+            - DIRECT
             - 🚀 手动切换
             - 🇭🇰 香港节点
             - 🇺🇲 美国节点
@@ -167,6 +170,7 @@ parsers: # array
         - name: 🌌 谷歌服务
           type: select
           proxies:
+            - DIRECT
             - 🚀 手动切换
             - 🇭🇰 香港节点
             - 🇺🇲 美国节点
@@ -177,6 +181,7 @@ parsers: # array
         - name: 📟 电报消息
           type: select
           proxies:
+            - DIRECT
             - 🚀 手动切换
             - 🇭🇰 香港节点
             - 🇺🇲 美国节点
@@ -187,6 +192,7 @@ parsers: # array
         - name: 🐦 推特消息
           type: select
           proxies:
+            - DIRECT
             - 🚀 手动切换
             - 🇭🇰 香港节点
             - 🇺🇲 美国节点
@@ -197,12 +203,14 @@ parsers: # array
         - name: 🤖 OpenAI
           type: select
           proxies:
+            - DIRECT
             - 🇺🇲 美国节点
             - 🚀 手动切换
 
         - name: 🎮 游戏平台
           type: select
           proxies:
+            - DIRECT
             - 🚀 手动切换
             - 🇭🇰 香港节点
             - 🇺🇲 美国节点
@@ -220,6 +228,7 @@ parsers: # array
         - name: 🌏 国内网站
           type: select
           proxies:
+            - 🇨🇳 中国节点
             - DIRECT
             - 🚀 手动切换
 
@@ -232,6 +241,7 @@ parsers: # array
         - name: 🐟 漏网之鱼
           type: select
           proxies:
+            - DIRECT
             - 🚀 手动切换
             - 🇭🇰 香港节点
             - 🇺🇲 美国节点
@@ -278,7 +288,14 @@ parsers: # array
           tolerance: 100 
           proxies:
             - DIRECT
-
+            
+        - name: 🇨🇳 中国节点
+          type: select
+          proxies:
+            - 🇨🇳 中国节点  
+            - 🚀 手动切换
+            - DIRECT
+            
       commands:
         - proxy-groups.🚀 手动切换.proxies=[]proxyNames
         - proxy-groups.🇭🇰 香港节点.proxies=[]proxyNames|^(?!.*游戏).*(港|HK|🇭🇰)+(.*)$
@@ -286,6 +303,7 @@ parsers: # array
         - proxy-groups.🇸🇬 狮城节点.proxies=[]proxyNames|^(?!.*游戏).*(新|狮|坡|🇸🇬|SG|Singapore)+(.*)$
         - proxy-groups.🇯🇵 日本节点.proxies=[]proxyNames|^(?!.*游戏).*(日|东京|🇯🇵|JP|Japan)+(.*)$
         - proxy-groups.🇨🇳 台湾节点.proxies=[]proxyNames|^(?!.*游戏).*(台|湾|TW|🇨🇳|Taiwan)+(.*)$
+        - proxy-groups.🇨🇳 中国节点.proxies=[]proxyNames|^(?!.*游戏).*(中国|CN|🇨🇳|China)+(.*)$
 
       prepend-rules: # 添加规则
          - RULE-SET,Direct,DIRECT
