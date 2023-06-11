@@ -5996,6 +5996,9 @@ rule-providers:
 
  #后加
 rules:
+  - DOMAIN-SUFFIX,kuwo.cn,🇨🇳 中国节点
+  - DOMAIN-SUFFIX,yun.kuwo.cn,🇨🇳 中国节点
+  - DOMAIN,yun.kuwo.cn,🇨🇳 中国节点
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
