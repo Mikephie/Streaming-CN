@@ -5888,8 +5888,8 @@ prepend-rules: # 添加规则
          - RULE-SET,BiliBili,📺 哔哩哔哩
          - RULE-SET,Game,DIRECT
          - RULE-SET,ProxyLite,DIRECT
-         - RULE-SET,ChinaIP,🌏 国内网站
-         - GEOIP,CN,🌏 国内网站
+         - RULE-SET,ChinaIP,🇨🇳 中国节点
+         - GEOIP,CN,🇨🇳 中国节点
          - MATCH,🐟 漏网之鱼
 
 mix-rule-providers: # 添加规则集
