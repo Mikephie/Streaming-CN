@@ -5879,7 +5879,21 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan.yaml
     interval: 86400
     path: Lan.yaml
-
+    
+  AdGuardSDNSFilter:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdGuardSDNSFilter/AdGuardSDNSFilter.yaml
+    path: ./ruleset/AdGuardSDNSFilter.yaml
+    interval: 86400
+    
+  AdGuardSDNSFilter_Domain:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdGuardSDNSFilter/AdGuardSDNSFilter_Domain.yaml
+    path: ./ruleset/AdGuardSDNSFilter_Domain.yaml
+    interval: 86400
+    
   Advertising:
     behavior: classical
     type: http
@@ -6019,6 +6033,8 @@ rules:
   # Rule
   - RULE-SET,Advertising,REJECT
   - RULE-SET,Advertising_Domain,REJECT
+  - RULE-SET,AdGuardSDNSFilter,REJECT
+  - RULE-SET,AdGuardSDNSFilter_Domain,REJECT
   - RULE-SET,SteamCN,🇨🇳 中国节点
   - RULE-SET,China,🇨🇳 中国节点
   - RULE-SET,China_Domain,🇨🇳 中国节点
