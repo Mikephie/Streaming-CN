@@ -4154,6 +4154,7 @@ proxy-groups:
       - 🇯🇵 1.0x有日志记录 🇨🇳 辽宁鞍山
 rules:
   - DOMAIN-SUFFIX,kuwo.cn,🐟 漏网之鱼
+  - DOMAIN-SUFFIX,yun.kuwo.cn,🐟 漏网之鱼
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
