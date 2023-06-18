@@ -473,6 +473,7 @@ proxy-groups:
   - name: 🎞Streaming
     type: select
     proxies:
+      - 🌐Direct
       - 🌑Proxy
       - 🕹AutoTest
       - EdNovas Cloud https://ednovas.me/
