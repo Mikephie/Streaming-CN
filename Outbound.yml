@@ -2682,6 +2682,8 @@ rules:
  - DOMAIN-SUFFIX,licdn.com,🌑Proxy
  - DOMAIN-SUFFIX,msn.com,🌑Proxy
  - DOMAIN-SUFFIX,skype.com,🌑Proxy
+ - GEOIP,CN,🎞StreamingSE
+ - MATCH,🎞StreamingSE
  - DOMAIN-SUFFIX,flyert.com,🌐Direct
  - DOMAIN-SUFFIX,gandi.net,🌐Direct
  - DOMAIN-SUFFIX,snapdrop.net,🌐Direct
@@ -8878,5 +8880,3 @@ rules:
  - IP-CIDR,223.255.0.0/17,🌐Direct
  - IP-CIDR,223.255.236.0/22,🌐Direct
  - IP-CIDR,223.255.252.0/23,🌐Direct
- - GEOIP,CN,🎞StreamingSE
- - MATCH,🎞StreamingSE
