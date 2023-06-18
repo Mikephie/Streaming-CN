@@ -1430,8 +1430,8 @@ rule-providers:
     path: ./ruleset/ChinaMedia.yaml
     interval: 86400
 rules:
- - RULE-SET,AdGuardSDNSFilter,REJECT
- - RULE-SET,AdGuardSDNSFilter_Domain,REJECT
+ - RULE-SET,AdGuardSDNSFilter,⛔️Reject
+ - RULE-SET,AdGuardSDNSFilter_Domain,⛔️Reject
  - RULE-SET,ChinaMedia,🎞StreamingSE
  - PROCESS-NAME,v2ray,DIRECT,DIRECT
  - PROCESS-NAME,ss-local,DIRECT,DIRECT
