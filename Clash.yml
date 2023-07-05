@@ -2554,10 +2554,10 @@ rule-providers:
     path: ChinaMedia.yaml  
   
 rules:
- - RULE-SET,Advertising,REJECT
- - RULE-SET,Advertising_Domain,REJECT
  - RULE-SET,AdGuardSDNSFilter,REJECT
  - RULE-SET,AdGuardSDNSFilter_Domain,REJECT
+ - RULE-SET,Advertising,REJECT
+ - RULE-SET,Advertising_Domain,REJECT
  - RULE-SET,ChinaMedia,🇨🇳 国内网站
  - DOMAIN-SUFFIX,msftncsi.com,DIRECT
  - DOMAIN-SUFFIX,msftconnecttest.com,DIRECT
