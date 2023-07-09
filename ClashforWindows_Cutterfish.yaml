@@ -69,7 +69,7 @@ i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Subscribe:
     <<: *a1
-    url: 手动填写，说明参考如下
+    url: https://xn--ed-c72c.com/api/v1/client/subscribe?token=cb04773c87424ba5a8ed8059f4d6e4e8
     path: ./proxy_providers/tmp.yaml
     # URL后面填写格式1: 直接填写你的机场Clash订阅[单一订阅][推荐此种方式，避免订阅泄露]
     # URL后面填写格式2：https://sub.xeton.dev/sub?target=clash&url=请手动填入你的订阅[多机场订阅用|分割即可]&list=true&udp=false  
